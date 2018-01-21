@@ -1,0 +1,405 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/lib/node_modules/npm/bin/npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--scripts-prepend-node-path=auto' ]
+2 info using npm@3.10.10
+3 info using node@v6.12.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly loadAllDepsIntoIdealTree Finishing
+20 silly loadIdealTree Finishing
+21 silly currentTree monikya-bot@1.0.0
+21 silly currentTree ├── ansi-regex@2.1.1
+21 silly currentTree ├── ansi-styles@2.2.1
+21 silly currentTree ├── asn1@0.2.3
+21 silly currentTree ├── assert-plus@0.2.0
+21 silly currentTree ├── async-limiter@1.0.0
+21 silly currentTree ├── async@2.6.0
+21 silly currentTree ├── aws-sign2@0.6.0
+21 silly currentTree ├── aws4@1.6.0
+21 silly currentTree ├── base64url@1.0.6
+21 silly currentTree ├─┬ bcrypt-pbkdf@1.0.1
+21 silly currentTree │ └── tweetnacl@0.14.5
+21 silly currentTree ├── bindings@1.2.1
+21 silly currentTree ├─┬ bl@1.1.2
+21 silly currentTree │ ├── readable-stream@2.0.6
+21 silly currentTree │ └── string_decoder@0.10.31
+21 silly currentTree ├── boom@2.10.1
+21 silly currentTree ├── buffer-equal-constant-time@1.0.1
+21 silly currentTree ├── camelcase-keys@1.0.0
+21 silly currentTree ├── camelcase@1.2.1
+21 silly currentTree ├── caseless@0.11.0
+21 silly currentTree ├── chalk@1.1.3
+21 silly currentTree ├── combined-stream@1.0.5
+21 silly currentTree ├── commander@2.13.0
+21 silly currentTree ├─┬ concat-stream@1.4.10
+21 silly currentTree │ ├── isarray@0.0.1
+21 silly currentTree │ ├── readable-stream@1.1.14
+21 silly currentTree │ └── string_decoder@0.10.31
+21 silly currentTree ├── core-util-is@1.0.2
+21 silly currentTree ├── cryptiles@2.0.5
+21 silly currentTree ├─┬ dashdash@1.14.1
+21 silly currentTree │ └── assert-plus@1.0.0
+21 silly currentTree ├── debug@2.6.9
+21 silly currentTree ├── delayed-stream@1.0.0
+21 silly currentTree ├── discord.js-musicbot-addon@1.8.2
+21 silly currentTree ├── discord.js@11.3.0
+21 silly currentTree ├── dom-walk@0.1.1
+21 silly currentTree ├── ecc-jsbn@0.1.1
+21 silly currentTree ├─┬ ecdsa-sig-formatter@1.0.9
+21 silly currentTree │ └── base64url@2.0.0
+21 silly currentTree ├── escape-string-regexp@1.0.5
+21 silly currentTree ├── extend@3.0.1
+21 silly currentTree ├── extsprintf@1.3.0
+21 silly currentTree ├── fluent-ffmpeg@2.1.2
+21 silly currentTree ├── for-each@0.3.2
+21 silly currentTree ├── forever-agent@0.6.1
+21 silly currentTree ├── form-data@1.0.1
+21 silly currentTree ├── gapitoken@0.1.5
+21 silly currentTree ├── generate-function@2.0.0
+21 silly currentTree ├── generate-object-property@1.2.0
+21 silly currentTree ├── get-stdin@4.0.1
+21 silly currentTree ├─┬ getpass@0.1.7
+21 silly currentTree │ └── assert-plus@1.0.0
+21 silly currentTree ├── global@4.3.2
+21 silly currentTree ├─┬ google-auth-library@0.9.10
+21 silly currentTree │ ├── async@1.4.2
+21 silly currentTree │ ├── qs@6.2.3
+21 silly currentTree │ ├── request@2.74.0
+21 silly currentTree │ ├── string-template@0.2.1
+21 silly currentTree │ └── tough-cookie@2.3.3
+21 silly currentTree ├── google-p12-pem@0.1.2
+21 silly currentTree ├─┬ googleapis@5.2.1
+21 silly currentTree │ └── async@1.5.2
+21 silly currentTree ├── gtoken@1.2.3
+21 silly currentTree ├── har-validator@2.0.6
+21 silly currentTree ├── has-ansi@2.0.0
+21 silly currentTree ├── hawk@3.1.3
+21 silly currentTree ├── hoek@2.16.3
+21 silly currentTree ├── html-entities@1.2.1
+21 silly currentTree ├── http-signature@1.1.1
+21 silly currentTree ├── indent-string@1.2.2
+21 silly currentTree ├── inherits@2.0.3
+21 silly currentTree ├── is-finite@1.0.2
+21 silly currentTree ├── is-function@1.0.1
+21 silly currentTree ├── is-my-json-valid@2.17.1
+21 silly currentTree ├── is-property@1.0.2
+21 silly currentTree ├── is-typedarray@1.0.0
+21 silly currentTree ├── isarray@1.0.0
+21 silly currentTree ├── isexe@2.0.0
+21 silly currentTree ├── isstream@0.1.2
+21 silly currentTree ├── jsbn@0.1.1
+21 silly currentTree ├── json-schema@0.2.3
+21 silly currentTree ├── json-stringify-safe@5.0.1
+21 silly currentTree ├── jsonpointer@4.0.1
+21 silly currentTree ├─┬ jsprim@1.4.1
+21 silly currentTree │ └── assert-plus@1.0.0
+21 silly currentTree ├─┬ jwa@1.0.2
+21 silly currentTree │ └── base64url@0.0.6
+21 silly currentTree ├── jws@3.0.0
+21 silly currentTree ├── lodash.noop@3.0.1
+21 silly currentTree ├── lodash@4.17.4
+21 silly currentTree ├── long@3.2.0
+21 silly currentTree ├── m3u8stream@0.1.3
+21 silly currentTree ├── map-obj@1.0.1
+21 silly currentTree ├── meow@2.0.0
+21 silly currentTree ├── mime-db@1.30.0
+21 silly currentTree ├── mime-types@2.1.17
+21 silly currentTree ├── mime@1.6.0
+21 silly currentTree ├── min-document@2.19.0
+21 silly currentTree ├── miniget@1.1.0
+21 silly currentTree ├── minimist@1.2.0
+21 silly currentTree ├── ms@2.0.0
+21 silly currentTree ├── nan@2.8.0
+21 silly currentTree ├── node-forge@0.7.1
+21 silly currentTree ├── node-opus@0.2.7
+21 silly currentTree ├── node-uuid@1.4.8
+21 silly currentTree ├── number-is-nan@1.0.1
+21 silly currentTree ├── oauth-sign@0.8.2
+21 silly currentTree ├── object-assign@1.0.0
+21 silly currentTree ├── ogg-packet@1.0.0
+21 silly currentTree ├── parse-headers@2.0.1
+21 silly currentTree ├── pinkie-promise@2.0.1
+21 silly currentTree ├── pinkie@2.0.4
+21 silly currentTree ├── prism-media@0.0.1
+21 silly currentTree ├── process-nextick-args@1.0.7
+21 silly currentTree ├── process@0.5.2
+21 silly currentTree ├── punycode@1.4.1
+21 silly currentTree ├── qs@6.1.2
+21 silly currentTree ├── querystring@0.2.0
+21 silly currentTree ├── readable-stream@2.3.3
+21 silly currentTree ├── ref-struct@1.1.0
+21 silly currentTree ├── ref@1.3.5
+21 silly currentTree ├── repeating@1.1.3
+21 silly currentTree ├── request@2.72.0
+21 silly currentTree ├── safe-buffer@5.1.1
+21 silly currentTree ├── sax@1.2.4
+21 silly currentTree ├── snekfetch@3.6.1
+21 silly currentTree ├── sntp@1.0.9
+21 silly currentTree ├─┬ sshpk@1.13.1
+21 silly currentTree │ ├── assert-plus@1.0.0
+21 silly currentTree │ └── tweetnacl@0.14.5
+21 silly currentTree ├── string_decoder@1.0.3
+21 silly currentTree ├── string-template@1.0.0
+21 silly currentTree ├── stringstream@0.0.5
+21 silly currentTree ├── strip-ansi@3.0.1
+21 silly currentTree ├── supports-color@2.0.0
+21 silly currentTree ├── through2@2.0.3
+21 silly currentTree ├── tough-cookie@2.2.2
+21 silly currentTree ├── trim@0.0.1
+21 silly currentTree ├── tunnel-agent@0.4.3
+21 silly currentTree ├── tweetnacl@1.0.0
+21 silly currentTree ├── typedarray@0.0.6
+21 silly currentTree ├── ultron@1.1.1
+21 silly currentTree ├─┬ url@0.11.0
+21 silly currentTree │ └── punycode@1.3.2
+21 silly currentTree ├── util-deprecate@1.0.2
+21 silly currentTree ├─┬ verror@1.10.0
+21 silly currentTree │ └── assert-plus@1.0.0
+21 silly currentTree ├── which@1.3.0
+21 silly currentTree ├── ws@4.0.0
+21 silly currentTree ├── xhr@2.4.1
+21 silly currentTree ├─┬ xml2js@0.2.8
+21 silly currentTree │ └── sax@0.5.8
+21 silly currentTree ├── xtend@4.0.1
+21 silly currentTree ├── youtube-api@2.0.9
+21 silly currentTree ├── youtube-audio-stream@0.0.50
+21 silly currentTree ├── youtube-playlist-info@0.1.0
+21 silly currentTree ├── youtube-search@1.0.10
+21 silly currentTree └── ytdl-core@0.14.4
+22 silly idealTree monikya-bot@1.0.0
+22 silly idealTree ├── ansi-regex@2.1.1
+22 silly idealTree ├── ansi-styles@2.2.1
+22 silly idealTree ├── asn1@0.2.3
+22 silly idealTree ├── assert-plus@0.2.0
+22 silly idealTree ├── async-limiter@1.0.0
+22 silly idealTree ├── async@2.6.0
+22 silly idealTree ├── aws-sign2@0.6.0
+22 silly idealTree ├── aws4@1.6.0
+22 silly idealTree ├── base64url@1.0.6
+22 silly idealTree ├─┬ bcrypt-pbkdf@1.0.1
+22 silly idealTree │ └── tweetnacl@0.14.5
+22 silly idealTree ├── bindings@1.2.1
+22 silly idealTree ├─┬ bl@1.1.2
+22 silly idealTree │ ├── readable-stream@2.0.6
+22 silly idealTree │ └── string_decoder@0.10.31
+22 silly idealTree ├── boom@2.10.1
+22 silly idealTree ├── buffer-equal-constant-time@1.0.1
+22 silly idealTree ├── camelcase-keys@1.0.0
+22 silly idealTree ├── camelcase@1.2.1
+22 silly idealTree ├── caseless@0.11.0
+22 silly idealTree ├── chalk@1.1.3
+22 silly idealTree ├── combined-stream@1.0.5
+22 silly idealTree ├── commander@2.13.0
+22 silly idealTree ├─┬ concat-stream@1.4.10
+22 silly idealTree │ ├── isarray@0.0.1
+22 silly idealTree │ ├── readable-stream@1.1.14
+22 silly idealTree │ └── string_decoder@0.10.31
+22 silly idealTree ├── core-util-is@1.0.2
+22 silly idealTree ├── cryptiles@2.0.5
+22 silly idealTree ├─┬ dashdash@1.14.1
+22 silly idealTree │ └── assert-plus@1.0.0
+22 silly idealTree ├── debug@2.6.9
+22 silly idealTree ├── delayed-stream@1.0.0
+22 silly idealTree ├── discord.js-musicbot-addon@1.8.2
+22 silly idealTree ├── discord.js@11.3.0
+22 silly idealTree ├── dom-walk@0.1.1
+22 silly idealTree ├── ecc-jsbn@0.1.1
+22 silly idealTree ├─┬ ecdsa-sig-formatter@1.0.9
+22 silly idealTree │ └── base64url@2.0.0
+22 silly idealTree ├── escape-string-regexp@1.0.5
+22 silly idealTree ├── extend@3.0.1
+22 silly idealTree ├── extsprintf@1.3.0
+22 silly idealTree ├── fluent-ffmpeg@2.1.2
+22 silly idealTree ├── for-each@0.3.2
+22 silly idealTree ├── forever-agent@0.6.1
+22 silly idealTree ├── form-data@1.0.1
+22 silly idealTree ├── gapitoken@0.1.5
+22 silly idealTree ├── generate-function@2.0.0
+22 silly idealTree ├── generate-object-property@1.2.0
+22 silly idealTree ├── get-stdin@4.0.1
+22 silly idealTree ├─┬ getpass@0.1.7
+22 silly idealTree │ └── assert-plus@1.0.0
+22 silly idealTree ├── global@4.3.2
+22 silly idealTree ├─┬ google-auth-library@0.9.10
+22 silly idealTree │ ├── async@1.4.2
+22 silly idealTree │ ├── qs@6.2.3
+22 silly idealTree │ ├── request@2.74.0
+22 silly idealTree │ ├── string-template@0.2.1
+22 silly idealTree │ └── tough-cookie@2.3.3
+22 silly idealTree ├── google-p12-pem@0.1.2
+22 silly idealTree ├─┬ googleapis@5.2.1
+22 silly idealTree │ └── async@1.5.2
+22 silly idealTree ├── gtoken@1.2.3
+22 silly idealTree ├── har-validator@2.0.6
+22 silly idealTree ├── has-ansi@2.0.0
+22 silly idealTree ├── hawk@3.1.3
+22 silly idealTree ├── hoek@2.16.3
+22 silly idealTree ├── html-entities@1.2.1
+22 silly idealTree ├── http-signature@1.1.1
+22 silly idealTree ├── indent-string@1.2.2
+22 silly idealTree ├── inherits@2.0.3
+22 silly idealTree ├── is-finite@1.0.2
+22 silly idealTree ├── is-function@1.0.1
+22 silly idealTree ├── is-my-json-valid@2.17.1
+22 silly idealTree ├── is-property@1.0.2
+22 silly idealTree ├── is-typedarray@1.0.0
+22 silly idealTree ├── isarray@1.0.0
+22 silly idealTree ├── isexe@2.0.0
+22 silly idealTree ├── isstream@0.1.2
+22 silly idealTree ├── jsbn@0.1.1
+22 silly idealTree ├── json-schema@0.2.3
+22 silly idealTree ├── json-stringify-safe@5.0.1
+22 silly idealTree ├── jsonpointer@4.0.1
+22 silly idealTree ├─┬ jsprim@1.4.1
+22 silly idealTree │ └── assert-plus@1.0.0
+22 silly idealTree ├─┬ jwa@1.0.2
+22 silly idealTree │ └── base64url@0.0.6
+22 silly idealTree ├── jws@3.0.0
+22 silly idealTree ├── lodash.noop@3.0.1
+22 silly idealTree ├── lodash@4.17.4
+22 silly idealTree ├── long@3.2.0
+22 silly idealTree ├── m3u8stream@0.1.3
+22 silly idealTree ├── map-obj@1.0.1
+22 silly idealTree ├── meow@2.0.0
+22 silly idealTree ├── mime-db@1.30.0
+22 silly idealTree ├── mime-types@2.1.17
+22 silly idealTree ├── mime@1.6.0
+22 silly idealTree ├── min-document@2.19.0
+22 silly idealTree ├── miniget@1.1.0
+22 silly idealTree ├── minimist@1.2.0
+22 silly idealTree ├── ms@2.0.0
+22 silly idealTree ├── nan@2.8.0
+22 silly idealTree ├── node-forge@0.7.1
+22 silly idealTree ├── node-opus@0.2.7
+22 silly idealTree ├── node-uuid@1.4.8
+22 silly idealTree ├── number-is-nan@1.0.1
+22 silly idealTree ├── oauth-sign@0.8.2
+22 silly idealTree ├── object-assign@1.0.0
+22 silly idealTree ├── ogg-packet@1.0.0
+22 silly idealTree ├── parse-headers@2.0.1
+22 silly idealTree ├── pinkie-promise@2.0.1
+22 silly idealTree ├── pinkie@2.0.4
+22 silly idealTree ├── prism-media@0.0.1
+22 silly idealTree ├── process-nextick-args@1.0.7
+22 silly idealTree ├── process@0.5.2
+22 silly idealTree ├── punycode@1.4.1
+22 silly idealTree ├── qs@6.1.2
+22 silly idealTree ├── querystring@0.2.0
+22 silly idealTree ├── readable-stream@2.3.3
+22 silly idealTree ├── ref-struct@1.1.0
+22 silly idealTree ├── ref@1.3.5
+22 silly idealTree ├── repeating@1.1.3
+22 silly idealTree ├── request@2.72.0
+22 silly idealTree ├── safe-buffer@5.1.1
+22 silly idealTree ├── sax@1.2.4
+22 silly idealTree ├── snekfetch@3.6.1
+22 silly idealTree ├── sntp@1.0.9
+22 silly idealTree ├─┬ sshpk@1.13.1
+22 silly idealTree │ ├── assert-plus@1.0.0
+22 silly idealTree │ └── tweetnacl@0.14.5
+22 silly idealTree ├── string_decoder@1.0.3
+22 silly idealTree ├── string-template@1.0.0
+22 silly idealTree ├── stringstream@0.0.5
+22 silly idealTree ├── strip-ansi@3.0.1
+22 silly idealTree ├── supports-color@2.0.0
+22 silly idealTree ├── through2@2.0.3
+22 silly idealTree ├── tough-cookie@2.2.2
+22 silly idealTree ├── trim@0.0.1
+22 silly idealTree ├── tunnel-agent@0.4.3
+22 silly idealTree ├── tweetnacl@1.0.0
+22 silly idealTree ├── typedarray@0.0.6
+22 silly idealTree ├── ultron@1.1.1
+22 silly idealTree ├─┬ url@0.11.0
+22 silly idealTree │ └── punycode@1.3.2
+22 silly idealTree ├── util-deprecate@1.0.2
+22 silly idealTree ├─┬ verror@1.10.0
+22 silly idealTree │ └── assert-plus@1.0.0
+22 silly idealTree ├── which@1.3.0
+22 silly idealTree ├── ws@4.0.0
+22 silly idealTree ├── xhr@2.4.1
+22 silly idealTree ├─┬ xml2js@0.2.8
+22 silly idealTree │ └── sax@0.5.8
+22 silly idealTree ├── xtend@4.0.1
+22 silly idealTree ├── youtube-api@2.0.9
+22 silly idealTree ├── youtube-audio-stream@0.0.50
+22 silly idealTree ├── youtube-playlist-info@0.1.0
+22 silly idealTree ├── youtube-search@1.0.10
+22 silly idealTree └── ytdl-core@0.14.4
+23 silly generateActionsToTake Starting
+24 silly install generateActionsToTake
+25 silly generateActionsToTake Finishing
+26 silly diffTrees action count 0
+27 silly decomposeActions action count 0
+28 silly runTopLevelLifecycles Starting
+29 silly install runPreinstallTopLevelLifecycles
+30 silly preinstall monikya-bot@1.0.0 /home/jo/Projets/discord-bot/monikya-bot-fb671607
+31 info lifecycle monikya-bot@1.0.0~preinstall: monikya-bot@1.0.0
+32 silly lifecycle monikya-bot@1.0.0~preinstall: no script for preinstall, continuing
+33 silly executeActions Starting
+34 silly install executeActions
+35 silly doSerial global-install 0
+36 silly doParallel fetch 0
+37 verbose correctMkdir /home/jo/.npm/_locks correctMkdir not in flight; initializing
+38 verbose lock using /home/jo/.npm/_locks/staging-7a36f5b6739d1622.lock for /home/jo/Projets/discord-bot/node_modules/.staging
+39 verbose unlock done using /home/jo/.npm/_locks/staging-7a36f5b6739d1622.lock for /home/jo/Projets/discord-bot/node_modules/.staging
+40 silly rollbackFailedOptional Starting
+41 silly rollbackFailedOptional Finishing
+42 silly runTopLevelLifecycles Finishing
+43 silly install printInstalled
+44 warn discord.js@11.3.0 requires a peer of bufferutil@^3.0.3 but none was installed.
+45 verbose If you need help, you may report this error at:
+45 verbose     <https://github.com/npm/npm/issues>
+46 warn discord.js@11.3.0 requires a peer of erlpack@discordapp/erlpack but none was installed.
+47 verbose If you need help, you may report this error at:
+47 verbose     <https://github.com/npm/npm/issues>
+48 warn discord.js@11.3.0 requires a peer of opusscript@^0.0.6 but none was installed.
+49 verbose If you need help, you may report this error at:
+49 verbose     <https://github.com/npm/npm/issues>
+50 warn discord.js@11.3.0 requires a peer of sodium@^2.0.3 but none was installed.
+51 verbose If you need help, you may report this error at:
+51 verbose     <https://github.com/npm/npm/issues>
+52 warn discord.js@11.3.0 requires a peer of libsodium-wrappers@^0.5.4 but none was installed.
+53 verbose If you need help, you may report this error at:
+53 verbose     <https://github.com/npm/npm/issues>
+54 warn discord.js@11.3.0 requires a peer of uws@^9.14.0 but none was installed.
+55 verbose If you need help, you may report this error at:
+55 verbose     <https://github.com/npm/npm/issues>
+56 warn monikya-bot@1.0.0 No repository field.
+57 verbose If you need help, you may report this error at:
+57 verbose     <https://github.com/npm/npm/issues>
+58 verbose stack Error: EACCES: permission denied, rmdir '/home/jo/Projets/discord-bot/node_modules/.staging/asynckit-081c8307'
+58 verbose stack     at Error (native)
+59 verbose cwd /home/jo/Projets/discord-bot
+60 error Linux 4.10.0-28-generic
+61 error argv "/usr/bin/node" "/usr/lib/node_modules/npm/bin/npm-cli.js" "install" "--scripts-prepend-node-path=auto"
+62 error node v6.12.3
+63 error npm  v3.10.10
+64 error path /home/jo/Projets/discord-bot/node_modules/.staging/asynckit-081c8307
+65 error code EACCES
+66 error errno -13
+67 error syscall rmdir
+68 error Error: EACCES: permission denied, rmdir '/home/jo/Projets/discord-bot/node_modules/.staging/asynckit-081c8307'
+68 error     at Error (native)
+68 error  { Error: EACCES: permission denied, rmdir '/home/jo/Projets/discord-bot/node_modules/.staging/asynckit-081c8307'
+68 error     at Error (native)
+68 error   errno: -13,
+68 error   code: 'EACCES',
+68 error   syscall: 'rmdir',
+68 error   path: '/home/jo/Projets/discord-bot/node_modules/.staging/asynckit-081c8307' }
+69 error Please try running this command again as root/Administrator.
+70 verbose exit [ -13, true ]

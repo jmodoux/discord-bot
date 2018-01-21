@@ -1,8 +1,10 @@
 // General
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const bot_token = 'NDA0MjI1MjcwMzU1MTk3OTUy.DUTcaA.CiyIrQGfugxiuyOSxy1ZzbNpGi0';
+
+const bot_token = 'NDA0NTYyNjAxNzk2ODI5MTg2.DUXp0g.BMQP7ejlCE69Jy9SPjA85igaNRc';
 const youtube_key = 'AIzaSyBVbd6crFeK6qeryLldrM1Ip-kQml72rVU';
+
 // Commands
 const MusicBot = require('discord.js-musicbot-addon');
 const music = new MusicBot(client, {
@@ -12,7 +14,7 @@ const music = new MusicBot(client, {
 });
 
 // Login bot
-client.login('NDA0MjI1MjcwMzU1MTk3OTUy.DUTcaA.CiyIrQGfugxiuyOSxy1ZzbNpGi0');
+client.login(bot_token);
 
 // Function call when someone send a message
 client.on('message', function (message) {
