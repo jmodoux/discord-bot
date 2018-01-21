@@ -1,21 +1,25 @@
+// General
 const Discord = require('discord.js');
-const bot = new Discord.Client();
+const client = new Discord.Client();
 const bot_token = 'NDA0MjI1MjcwMzU1MTk3OTUy.DUTcaA.CiyIrQGfugxiuyOSxy1ZzbNpGi0';
+const youtube_key = 'AIzaSyBVbd6crFeK6qeryLldrM1Ip-kQml72rVU';
+// Commands
+const MusicBot = require('discord.js-musicbot-addon');
+const music = new MusicBot(client, {
+    disableLoop: true,
 
-bot.login('NDA0MjI1MjcwMzU1MTk3OTUy.DUTcaA.CiyIrQGfugxiuyOSxy1ZzbNpGi0');
+    youtubeKey: youtube_key
+});
 
-bot.on('message', function (message) {
+// Login bot
+client.login('NDA0MjI1MjcwMzU1MTk3OTUy.DUTcaA.CiyIrQGfugxiuyOSxy1ZzbNpGi0');
+
+// Function call when someone send a message
+client.on('message', function (message) {
     console.log(message.content);
-    switch (message.content){
 
-        case '!ping':
-            message.channel.send('pong');
-            break;
-        default :
-            break;
-     }
-
-
+    //let commandUsed =
+    //Music.parse(message);
 })
 
 
