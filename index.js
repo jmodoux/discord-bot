@@ -7,15 +7,18 @@ const youtube_key = 'AIzaSyBVbd6crFeK6qeryLldrM1Ip-kQml72rVU';
 
 // Commands
 const MusicBot = require('discord.js-musicbot-addon');
-const Command = require('./commands/command')
+const Command = require('./commands/command');
+const ContainKeyWord = require('./commands/containKeyWord');
 
+
+// Create objects
 const music = new MusicBot(client, {
     disableLoop: true,
 
     youtubeKey: youtube_key
 });
 const command = new Command(client);
-
+const containKeyWord = new ContainKeyWord(client);
 
 // Login bot
 client.login(bot_token);

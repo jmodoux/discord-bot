@@ -24,6 +24,9 @@ module.exports = function(client, options) {
                 case "dontatme":
                     return dontAtMe(msg, suffix, client);
                     break;
+                case "dontatme":
+                    return dontAtMe(msg, suffix, client);
+                    break;
                 default :
                     break;
             }
