@@ -1,14 +1,13 @@
 const Discord = require('discord.js');
 module.exports = Command;
 
-function Command(msg) {
-    this.msg = msg;
-    this.run();
+function Command() {
+    this.msg = null;
 }
 
-Command.prototype.run = function()
+Command.prototype.run = function(msg)
 {
-
+    this.msg = msg;
     const message = this.msg.content.trim();
 
     // Check if the message is a command.
@@ -21,8 +20,8 @@ Command.prototype.run = function()
             case "dontatme":
                 return this.dontAtMe(suffix);
                 break;
-            case "dontatme":
-                return this.dontAtMe(suffix);
+            case "givemoneytemmie":
+                return this.giveMoneyForTemmie(suffix);
                 break;
             default :
                 break;
@@ -58,7 +57,33 @@ Command.prototype.dontAtMe = function(suffix)
     this.msg.channel.send({embed});
 };
 
+Command.prototype.giveMoneyForTemmie = function(suffix)
+{
+    const client = this.msg.client;
 
+
+    let amountOfMoney = suffix;
+
+    if (suffix.split(' ').length > 1) {
+        amountOfMoney = suffix.split(' ')[0];
+    }
+
+    const embed = new Discord.RichEmbed();
+    if(amountOfMoney < 1000) {
+        embed.setImage('https://media3.giphy.com/media/L9FNHIhvtpFks/giphy.gif');
+        embed.setDescription('yayA!!! thanks '+`${this.msg.author.username}`+' for the muns.. But thas NOT enough for Colleg..');
+
+    }else{
+        /*
+        embed.setAuthor(`${this.msg.author.username}`, this.msg.author.avatarURL, this.msg.author.url);
+        embed.setDescription(DontAtMe + ' ' + mention + '\n'
+            + monkaS + point_right + ' ' + content);
+        */
+    }
+
+    this.dInvoker();
+    this.msg.channel.send({embed});
+};
 
 /**
  * Deletes the command message if invoker is on.

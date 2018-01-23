@@ -2,12 +2,12 @@ const Discord = require('discord.js');
 
 module.exports = ContainKeyWord;
 
-function ContainKeyWord(msg) {
-    this.msg = msg;
-    this.react();
+function ContainKeyWord() {
+    this.msg = null;
 }
 
-ContainKeyWord.prototype.react = function() {
+ContainKeyWord.prototype.react = function(msg) {
+    this.msg = msg;
     // Detect if last msg was not send by a bot
 
     if (!this.msg.author.bot) {
