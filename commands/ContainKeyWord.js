@@ -27,7 +27,7 @@ ContainKeyWord.prototype.moneyReact = function() {
     const embed = new Discord.RichEmbed();
 
     embed.setDescription('WOA!!! thas ALOT of muneys...');
-    embed.setImage('http://s2.thingpic.com/images/se/M6ibKNHjNAXoTQ21VWRQNR7E.gif');
+    embed.set('http://s2.thingpic.com/images/se/M6ibKNHjNAXoTQ21VWRQNR7E.gif');
 
     this.msg.channel.send({embed});
 };

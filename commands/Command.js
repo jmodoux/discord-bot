@@ -1,4 +1,6 @@
 const Discord = require('discord.js');
+const stream = require('youtube-audio-stream');
+
 module.exports = Command;
 
 function Command() {
@@ -18,10 +20,10 @@ Command.prototype.run = function(msg)
 
         switch (command) {
             case "dontatme":
-                return this.dontAtMe(suffix);
+                this.dontAtMe(suffix);
                 break;
-            case "givemoneytemmie":
-                return this.giveMoneyForTemmie(suffix);
+            case "givemoney":
+                this.giveMoneyForTemmie(suffix);
                 break;
             default :
                 break;
@@ -74,11 +76,13 @@ Command.prototype.giveMoneyForTemmie = function(suffix)
         embed.setDescription('yayA!!! thanks '+`${this.msg.author.username}`+' for the muns.. But thas NOT enough for Colleg..');
 
     }else{
-        /*
-        embed.setAuthor(`${this.msg.author.username}`, this.msg.author.avatarURL, this.msg.author.url);
-        embed.setDescription(DontAtMe + ' ' + mention + '\n'
-            + monkaS + point_right + ' ' + content);
-        */
+
+        embed.setDescription('OKs! tem go to colleg and make u prouds!!!');
+        embed.setImage('https://i.imgur.com/d1ZDiqX.gif');
+
+        this.playYoutube('https://www.youtube.com/watch?v=_BD140nCDps');
+
+        this.dInvoker();
     }
 
     this.dInvoker();
@@ -95,3 +99,45 @@ Command.prototype.dInvoker = function() {
     this.msg.delete();
 };
 
+Command.prototype.playYoutube = function(videoURL){
+    new Promise((resolve, reject) => {
+        // Join the voice channel if not already in one.
+        const voiceConnection = client.voiceConnections.find(val => val.channel.guild.id == this.msg.guild.id);
+        if (voiceConnection === null) {
+            // Check if the user is in a voice channel.
+            if (this.msg.member.voiceChannel && this.msg.member.voiceChannel.joinable) {
+                this.msg.member.voiceChannel.join().then(connection => {
+                    resolve(connection);
+                }).catch((error) => {
+                    console.log(error);
+                });
+            } else if(!this.msg.member.voiceChannel.joinable) {
+                //this.msg.channel.send(note('fail', 'I do not have permission to join your voice channel!'))
+                reject();
+            } else {
+                // Otherwise, clear the queue and do nothing.
+                //queue.splice(0, queue.length);
+                reject();
+            }
+        } else {
+            resolve(voiceConnection);
+        }
+    }).then()(connection => {
+
+        // console.log(video.webpage_url);
+        //removed currently.
+
+        // Play the video.
+        try {
+            let dispatcher = connection.playStream(stream(videoURL), {seek: 0, volume: (80/100)});
+
+            dispatcher.on('end', () => {
+                //DELETE THIS MESSAGE
+            });
+        } catch(error) {
+            console.log(error);
+        }
+    }).catch((error) => {
+        console.log(error);
+    });
+}
